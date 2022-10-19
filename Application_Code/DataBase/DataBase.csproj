@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EBAFD64-50C9-47E6-9F6A-2C6B50F84338}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataBase</RootNamespace>
+    <AssemblyName>DataBase</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context.cs" />
+    <Compile Include="Migrations\201805311726260_Inicial.cs" />
+    <Compile Include="Migrations\201805311726260_Inicial.Designer.cs">
+      <DependentUpon>201805311726260_Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806132302303_Primer cambio.cs" />
+    <Compile Include="Migrations\201806132302303_Primer cambio.Designer.cs">
+      <DependentUpon>201806132302303_Primer cambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806132314591_ChatDataBase.cs" />
+    <Compile Include="Migrations\201806132314591_ChatDataBase.Designer.cs">
+      <DependentUpon>201806132314591_ChatDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806181124064_Architect now in database.cs" />
+    <Compile Include="Migrations\201806181124064_Architect now in database.Designer.cs">
+      <DependentUpon>201806181124064_Architect now in database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806181149373_Modifications to chart.cs" />
+    <Compile Include="Migrations\201806181149373_Modifications to chart.Designer.cs">
+      <DependentUpon>201806181149373_Modifications to chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806181206062_Signatures and Elements.cs" />
+    <Compile Include="Migrations\201806181206062_Signatures and Elements.Designer.cs">
+      <DependentUpon>201806181206062_Signatures and Elements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806181220516_chats client.cs" />
+    <Compile Include="Migrations\201806181220516_chats client.Designer.cs">
+      <DependentUpon>201806181220516_chats client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806192055420_IDrawable error.cs" />
+    <Compile Include="Migrations\201806192055420_IDrawable error.Designer.cs">
+      <DependentUpon>201806192055420_IDrawable error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806201354315_modify client.cs" />
+    <Compile Include="Migrations\201806201354315_modify client.Designer.cs">
+      <DependentUpon>201806201354315_modify client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806201407365_remove client.cs" />
+    <Compile Include="Migrations\201806201407365_remove client.Designer.cs">
+      <DependentUpon>201806201407365_remove client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806201900193_ChartClient.cs" />
+    <Compile Include="Migrations\201806201900193_ChartClient.Designer.cs">
+      <DependentUpon>201806201900193_ChartClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806201956262_client remove from chart.cs" />
+    <Compile Include="Migrations\201806201956262_client remove from chart.Designer.cs">
+      <DependentUpon>201806201956262_client remove from chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806202024381_chart name.cs" />
+    <Compile Include="Migrations\201806202024381_chart name.Designer.cs">
+      <DependentUpon>201806202024381_chart name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806202335033_IDrawable.cs" />
+    <Compile Include="Migrations\201806202335033_IDrawable.Designer.cs">
+      <DependentUpon>201806202335033_IDrawable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806202347315_IDrawable2.cs" />
+    <Compile Include="Migrations\201806202347315_IDrawable2.Designer.cs">
+      <DependentUpon>201806202347315_IDrawable2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806202350446_IDrawable3.cs" />
+    <Compile Include="Migrations\201806202350446_IDrawable3.Designer.cs">
+      <DependentUpon>201806202350446_IDrawable3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806202354422_Orientation.cs" />
+    <Compile Include="Migrations\201806202354422_Orientation.Designer.cs">
+      <DependentUpon>201806202354422_Orientation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806210000312_Modification.cs" />
+    <Compile Include="Migrations\201806210000312_Modification.Designer.cs">
+      <DependentUpon>201806210000312_Modification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806210028023_chart-element_updated.cs" />
+    <Compile Include="Migrations\201806210028023_chart-element_updated.Designer.cs">
+      <DependentUpon>201806210028023_chart-element_updated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806210029432_chart-signature_updated.cs" />
+    <Compile Include="Migrations\201806210029432_chart-signature_updated.Designer.cs">
+      <DependentUpon>201806210029432_chart-signature_updated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806210205344_moreChanges.cs" />
+    <Compile Include="Migrations\201806210205344_moreChanges.Designer.cs">
+      <DependentUpon>201806210205344_moreChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806211447121_dimensions.cs" />
+    <Compile Include="Migrations\201806211447121_dimensions.Designer.cs">
+      <DependentUpon>201806211447121_dimensions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806211713208_virtual.cs" />
+    <Compile Include="Migrations\201806211713208_virtual.Designer.cs">
+      <DependentUpon>201806211713208_virtual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806212131397_signatures.cs" />
+    <Compile Include="Migrations\201806212131397_signatures.Designer.cs">
+      <DependentUpon>201806212131397_signatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Obligatorio1DA1\Domain.csproj">
+      <Project>{b1211438-eb0e-4ac5-af4b-7af04e57c142}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805311726260_Inicial.resx">
+      <DependentUpon>201805311726260_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806132302303_Primer cambio.resx">
+      <DependentUpon>201806132302303_Primer cambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806132314591_ChatDataBase.resx">
+      <DependentUpon>201806132314591_ChatDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806181124064_Architect now in database.resx">
+      <DependentUpon>201806181124064_Architect now in database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806181149373_Modifications to chart.resx">
+      <DependentUpon>201806181149373_Modifications to chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806181206062_Signatures and Elements.resx">
+      <DependentUpon>201806181206062_Signatures and Elements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806181220516_chats client.resx">
+      <DependentUpon>201806181220516_chats client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806192055420_IDrawable error.resx">
+      <DependentUpon>201806192055420_IDrawable error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806201354315_modify client.resx">
+      <DependentUpon>201806201354315_modify client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806201407365_remove client.resx">
+      <DependentUpon>201806201407365_remove client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806201900193_ChartClient.resx">
+      <DependentUpon>201806201900193_ChartClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806201956262_client remove from chart.resx">
+      <DependentUpon>201806201956262_client remove from chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806202024381_chart name.resx">
+      <DependentUpon>201806202024381_chart name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806202335033_IDrawable.resx">
+      <DependentUpon>201806202335033_IDrawable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806202347315_IDrawable2.resx">
+      <DependentUpon>201806202347315_IDrawable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806202350446_IDrawable3.resx">
+      <DependentUpon>201806202350446_IDrawable3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806202354422_Orientation.resx">
+      <DependentUpon>201806202354422_Orientation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806210000312_Modification.resx">
+      <DependentUpon>201806210000312_Modification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806210028023_chart-element_updated.resx">
+      <DependentUpon>201806210028023_chart-element_updated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806210029432_chart-signature_updated.resx">
+      <DependentUpon>201806210029432_chart-signature_updated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806210205344_moreChanges.resx">
+      <DependentUpon>201806210205344_moreChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806211447121_dimensions.resx">
+      <DependentUpon>201806211447121_dimensions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806211713208_virtual.resx">
+      <DependentUpon>201806211713208_virtual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806212131397_signatures.resx">
+      <DependentUpon>201806212131397_signatures.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
